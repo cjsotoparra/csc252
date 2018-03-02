@@ -1,0 +1,432 @@
+PC: 0x0000_0000   Instruction: 0x0232_8020
+  --
+  opcode  (6 bits)=0x00
+  rs      (5 bits)=0x11
+  rt      (5 bits)=0x12
+  rd      (5 bits)=0x10
+  shamt   (5 bits)=0x00
+  funct   (6 bits)=0x20
+  imm16  (16 bits)=0x     8020
+  imm32  (32 bits)=0xffff_8020
+  addr   (26 bits)=0x 232_8020
+  --
+  err=0
+  --
+  ALUsrc     =0
+  ALU.op     =2
+  ALU.bNegate=0
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =1
+  regWrite   =1
+  branch     =0
+  jump       =0
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_0004   Instruction: 0x0295_9822
+  --
+  opcode  (6 bits)=0x00
+  rs      (5 bits)=0x14
+  rt      (5 bits)=0x15
+  rd      (5 bits)=0x13
+  shamt   (5 bits)=0x00
+  funct   (6 bits)=0x22
+  imm16  (16 bits)=0x     9822
+  imm32  (32 bits)=0xffff_9822
+  addr   (26 bits)=0x 295_9822
+  --
+  err=0
+  --
+  ALUsrc     =0
+  ALU.op     =2
+  ALU.bNegate=1
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =1
+  regWrite   =1
+  branch     =0
+  jump       =0
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_0008   Instruction: 0x216a_ffff
+  --
+  opcode  (6 bits)=0x08
+  rs      (5 bits)=0x0b
+  rt      (5 bits)=0x0a
+  rd      (5 bits)=0x1f
+  shamt   (5 bits)=0x1f
+  funct   (6 bits)=0x3f
+  imm16  (16 bits)=0x     ffff
+  imm32  (32 bits)=0xffff_ffff
+  addr   (26 bits)=0x 16a_ffff
+  --
+  err=0
+  --
+  ALUsrc     =1
+  ALU.op     =2
+  ALU.bNegate=0
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =0
+  regWrite   =1
+  branch     =0
+  jump       =0
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_000c   Instruction: 0x21ac_0010
+  --
+  opcode  (6 bits)=0x08
+  rs      (5 bits)=0x0d
+  rt      (5 bits)=0x0c
+  rd      (5 bits)=0x00
+  shamt   (5 bits)=0x00
+  funct   (6 bits)=0x10
+  imm16  (16 bits)=0x     0010
+  imm32  (32 bits)=0x0000_0010
+  addr   (26 bits)=0x 1ac_0010
+  --
+  err=0
+  --
+  ALUsrc     =1
+  ALU.op     =2
+  ALU.bNegate=0
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =0
+  regWrite   =1
+  branch     =0
+  jump       =0
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_0010   Instruction: 0x0002_0821
+  --
+  opcode  (6 bits)=0x00
+  rs      (5 bits)=0x00
+  rt      (5 bits)=0x02
+  rd      (5 bits)=0x01
+  shamt   (5 bits)=0x00
+  funct   (6 bits)=0x21
+  imm16  (16 bits)=0x     0821
+  imm32  (32 bits)=0x0000_0821
+  addr   (26 bits)=0x 002_0821
+  --
+  err=0
+  --
+  ALUsrc     =0
+  ALU.op     =2
+  ALU.bNegate=0
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =1
+  regWrite   =1
+  branch     =0
+  jump       =0
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_0014   Instruction: 0x0085_1823
+  --
+  opcode  (6 bits)=0x00
+  rs      (5 bits)=0x04
+  rt      (5 bits)=0x05
+  rd      (5 bits)=0x03
+  shamt   (5 bits)=0x00
+  funct   (6 bits)=0x23
+  imm16  (16 bits)=0x     1823
+  imm32  (32 bits)=0x0000_1823
+  addr   (26 bits)=0x 085_1823
+  --
+  err=0
+  --
+  ALUsrc     =0
+  ALU.op     =2
+  ALU.bNegate=1
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =1
+  regWrite   =1
+  branch     =0
+  jump       =0
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_0018   Instruction: 0x24e6_1234
+  --
+  opcode  (6 bits)=0x09
+  rs      (5 bits)=0x07
+  rt      (5 bits)=0x06
+  rd      (5 bits)=0x02
+  shamt   (5 bits)=0x08
+  funct   (6 bits)=0x34
+  imm16  (16 bits)=0x     1234
+  imm32  (32 bits)=0x0000_1234
+  addr   (26 bits)=0x 0e6_1234
+  --
+  err=0
+  --
+  ALUsrc     =1
+  ALU.op     =2
+  ALU.bNegate=0
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =0
+  regWrite   =1
+  branch     =0
+  jump       =0
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_001c   Instruction: 0x014b_4824
+  --
+  opcode  (6 bits)=0x00
+  rs      (5 bits)=0x0a
+  rt      (5 bits)=0x0b
+  rd      (5 bits)=0x09
+  shamt   (5 bits)=0x00
+  funct   (6 bits)=0x24
+  imm16  (16 bits)=0x     4824
+  imm32  (32 bits)=0x0000_4824
+  addr   (26 bits)=0x 14b_4824
+  --
+  err=0
+  --
+  ALUsrc     =0
+  ALU.op     =0
+  ALU.bNegate=0
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =1
+  regWrite   =1
+  branch     =0
+  jump       =0
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_0020   Instruction: 0x01ae_6025
+  --
+  opcode  (6 bits)=0x00
+  rs      (5 bits)=0x0d
+  rt      (5 bits)=0x0e
+  rd      (5 bits)=0x0c
+  shamt   (5 bits)=0x00
+  funct   (6 bits)=0x25
+  imm16  (16 bits)=0x     6025
+  imm32  (32 bits)=0x0000_6025
+  addr   (26 bits)=0x 1ae_6025
+  --
+  err=0
+  --
+  ALUsrc     =0
+  ALU.op     =1
+  ALU.bNegate=0
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =1
+  regWrite   =1
+  branch     =0
+  jump       =0
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_002c   Instruction: 0x02d7_a82a
+  --
+  opcode  (6 bits)=0x00
+  rs      (5 bits)=0x16
+  rt      (5 bits)=0x17
+  rd      (5 bits)=0x15
+  shamt   (5 bits)=0x00
+  funct   (6 bits)=0x2a
+  imm16  (16 bits)=0x     a82a
+  imm32  (32 bits)=0xffff_a82a
+  addr   (26 bits)=0x 2d7_a82a
+  --
+  err=0
+  --
+  ALUsrc     =0
+  ALU.op     =3
+  ALU.bNegate=1
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =1
+  regWrite   =1
+  branch     =0
+  jump       =0
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_0030   Instruction: 0x2b38_ffff
+  --
+  opcode  (6 bits)=0x0a
+  rs      (5 bits)=0x19
+  rt      (5 bits)=0x18
+  rd      (5 bits)=0x1f
+  shamt   (5 bits)=0x1f
+  funct   (6 bits)=0x3f
+  imm16  (16 bits)=0x     ffff
+  imm32  (32 bits)=0xffff_ffff
+  addr   (26 bits)=0x 338_ffff
+  --
+  err=0
+  --
+  ALUsrc     =1
+  ALU.op     =3
+  ALU.bNegate=1
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =0
+  regWrite   =1
+  branch     =0
+  jump       =0
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_0034   Instruction: 0x8c1a_0068
+  --
+  opcode  (6 bits)=0x23
+  rs      (5 bits)=0x00
+  rt      (5 bits)=0x1a
+  rd      (5 bits)=0x00
+  shamt   (5 bits)=0x01
+  funct   (6 bits)=0x28
+  imm16  (16 bits)=0x     0068
+  imm32  (32 bits)=0x0000_0068
+  addr   (26 bits)=0x 01a_0068
+  --
+  err=0
+  --
+  ALUsrc     =1
+  ALU.op     =2
+  ALU.bNegate=0
+  memRead    =1
+  memWrite   =0
+  memToReg   =1
+  regDst     =0
+  regWrite   =1
+  branch     =0
+  jump       =0
+
+  memResult.readVal=0x0068_0068
+
+PC: 0x0000_0038   Instruction: 0xac1d_006c
+  --
+  opcode  (6 bits)=0x2b
+  rs      (5 bits)=0x00
+  rt      (5 bits)=0x1d
+  rd      (5 bits)=0x00
+  shamt   (5 bits)=0x01
+  funct   (6 bits)=0x2c
+  imm16  (16 bits)=0x     006c
+  imm32  (32 bits)=0x0000_006c
+  addr   (26 bits)=0x 01d_006c
+  --
+  err=0
+  --
+  ALUsrc     =1
+  ALU.op     =2
+  ALU.bNegate=0
+  memRead    =0
+  memWrite   =1
+  memToReg   =0
+  regDst     =0
+  regWrite   =0
+  branch     =0
+  jump       =0
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_003c   Instruction: 0x1020_0104
+  --
+  opcode  (6 bits)=0x04
+  rs      (5 bits)=0x01
+  rt      (5 bits)=0x00
+  rd      (5 bits)=0x00
+  shamt   (5 bits)=0x04
+  funct   (6 bits)=0x04
+  imm16  (16 bits)=0x     0104
+  imm32  (32 bits)=0x0000_0104
+  addr   (26 bits)=0x 020_0104
+  --
+  err=0
+  --
+  ALUsrc     =0
+  ALU.op     =2
+  ALU.bNegate=1
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =0
+  regWrite   =0
+  branch     =1
+  jump       =0
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_0040   Instruction: 0x0923_4567
+  --
+  opcode  (6 bits)=0x02
+  rs      (5 bits)=0x09
+  rt      (5 bits)=0x03
+  rd      (5 bits)=0x08
+  shamt   (5 bits)=0x15
+  funct   (6 bits)=0x27
+  imm16  (16 bits)=0x     4567
+  imm32  (32 bits)=0x0000_4567
+  addr   (26 bits)=0x 123_4567
+  --
+  err=0
+  --
+  ALUsrc     =0
+  ALU.op     =0
+  ALU.bNegate=0
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =0
+  regWrite   =0
+  branch     =0
+  jump       =1
+
+  memResult.readVal=0x0000_0000
+
+PC: 0x0000_0044   Instruction: 0x0bff_ffff
+  --
+  opcode  (6 bits)=0x02
+  rs      (5 bits)=0x1f
+  rt      (5 bits)=0x1f
+  rd      (5 bits)=0x1f
+  shamt   (5 bits)=0x1f
+  funct   (6 bits)=0x3f
+  imm16  (16 bits)=0x     ffff
+  imm32  (32 bits)=0xffff_ffff
+  addr   (26 bits)=0x 3ff_ffff
+  --
+  err=0
+  --
+  ALUsrc     =0
+  ALU.op     =0
+  ALU.bNegate=0
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =0
+  regWrite   =0
+  branch     =0
+  jump       =1
+
+  memResult.readVal=0x0000_0000
+

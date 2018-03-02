@@ -1,0 +1,1856 @@
+
+************* Running the testcases *************
+
+Compiling the testcase test_01_getInstruction.c, and linking it to proj09.c proj09_test_commonCode.c ...
+******************************
+* Testcase 'test_01_getInstruction.c' passed
+******************************
+
+Compiling the testcase test_02_executeControl1.c, and linking it to proj09.c proj09_test_commonCode.c ...
+******************************
+* Testcase 'test_02_executeControl1.c' passed
+******************************
+
+Compiling the testcase test_03_executeControl2.c, and linking it to proj09.c proj09_test_commonCode.c ...
+******************************
+* Testcase 'test_03_executeControl2.c' passed
+******************************
+
+Compiling the testcase test_04_aluInputs.c, and linking it to proj09.c proj09_test_commonCode.c ...
+******************************
+* Testcase 'test_04_aluInputs.c' passed
+******************************
+
+Compiling the testcase test_05_execALU.c, and linking it to proj09.c proj09_test_commonCode.c ...
+******************************
+* Testcase 'test_05_execALU.c' passed
+******************************
+
+Compiling the testcase test_06_execMEM.c, and linking it to proj09.c proj09_test_commonCode.c ...
+******************************
+* TESTCASE 'test_06_execMEM.c' FAILED
+******************************
+
+     ----- diff OUTPUT ----
+351d350
+<   MEM CHANGED.  Addr: 0x0000_006c  Was: 0x006c_006c Now: 0x1d1d_1d1d
+     ----- END diff ----
+
+Compiling the testcase test_10_singleInstruction.c, and linking it to proj09.c proj09_test_commonCode.c ...
+******************************
+* TESTCASE 'test_10_singleInstruction.c' FAILED
+******************************
+
+     ----- diff OUTPUT ----
+33,34c33,34
+<   PC was: 0x0000_0100 is: 0x0000_0104
+<   reg[ 8] was: 0x0808_0808 is 0x2727_2727
+---
+> ERROR: The PC did not change!
+>   PC was: 0x0000_0100 is: 0x0000_0100
+     ----- END diff ----
+
+Compiling the testcase test_11_syscalls.c, and linking it to proj09.c proj09_test_commonCode.c ...
+******************************
+* TESTCASE 'test_11_syscalls.c' FAILED
+******************************
+
+     ----- diff OUTPUT ----
+1,3c1
+< 123412345678
+< TEST STRING
+< --- syscall 10 executed: Normal termination of the assembly language program.
+---
+> ERROR: The PC did not change!
+     ----- END diff ----
+
+Compiling the testcase test_12_multipleInstructions1.c, and linking it to proj09.c proj09_test_commonCode.c ...
+******************************
+* TESTCASE 'test_12_multipleInstructions1.c' FAILED
+******************************
+
+     ----- diff OUTPUT ----
+28,1767d27
+<   ALU.zero  =1
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0000 is: 0x0000_0004
+<   reg[ 8] was: 0x0808_0808 is 0x0000_0000
+< 
+< Opcode: 0x08   at 0x0000_0004
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x09
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x0a
+<   imm16  (16 bits)=0x     000a
+<   imm32  (32 bits)=0x0000_000a
+<   addr   (26 bits)=0x 009_000a
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000a
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0004 is: 0x0000_0008
+<   reg[ 9] was: 0x0909_0909 is 0x0000_000a
+< 
+< Opcode: 0x08   at 0x0000_0008
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x0a
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x05
+<   imm16  (16 bits)=0x     0005
+<   imm32  (32 bits)=0x0000_0005
+<   addr   (26 bits)=0x 00a_0005
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0005
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0008 is: 0x0000_000c
+<   reg[10] was: 0x0a0a_0a0a is 0x0000_0005
+< 
+< Opcode: 0x08   at 0x0000_000c
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x0c
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x03
+<   imm16  (16 bits)=0x     0003
+<   imm32  (32 bits)=0x0000_0003
+<   addr   (26 bits)=0x 00c_0003
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0003
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_000c is: 0x0000_0010
+<   reg[12] was: 0x0c0c_0c0c is 0x0000_0003
+< 
+< Opcode: 0x00   at 0x0000_0010
+<   funct: 0x2a
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x08
+<   rt      (5 bits)=0x0a
+<   rd      (5 bits)=0x0b
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x2a
+<   imm16  (16 bits)=0x     582a
+<   imm32  (32 bits)=0x0000_582a
+<   addr   (26 bits)=0x 10a_582a
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =3
+<   ALU.bNegate=1
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0010 is: 0x0000_0014
+<   reg[11] was: 0x0b0b_0b0b is 0x0000_0001
+< 
+< Opcode: 0x04   at 0x0000_0014
+<   --
+<   opcode  (6 bits)=0x04
+<   rs      (5 bits)=0x0b
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x09
+<   imm16  (16 bits)=0x     0009
+<   imm32  (32 bits)=0x0000_0009
+<   addr   (26 bits)=0x 160_0009
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=1
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =0
+<   branch     =1
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0014 is: 0x0000_0018
+< 
+< Opcode: 0x00   at 0x0000_0018
+<   funct: 0x20
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x09
+<   rt      (5 bits)=0x0c
+<   rd      (5 bits)=0x09
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x20
+<   imm16  (16 bits)=0x     4820
+<   imm32  (32 bits)=0x0000_4820
+<   addr   (26 bits)=0x 12c_4820
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000d
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0018 is: 0x0000_001c
+<   reg[ 9] was: 0x0000_000a is 0x0000_000d
+< 
+< Opcode: 0x08   at 0x0000_001c
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x02
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x01
+<   imm16  (16 bits)=0x     0001
+<   imm32  (32 bits)=0x0000_0001
+<   addr   (26 bits)=0x 002_0001
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_001c is: 0x0000_0020
+<   reg[ 2] was: 0x0202_0202 is 0x0000_0001
+< 
+< Opcode: 0x00   at 0x0000_0020
+<   funct: 0x20
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x09
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x04
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x20
+<   imm16  (16 bits)=0x     2020
+<   imm32  (32 bits)=0x0000_2020
+<   addr   (26 bits)=0x 120_2020
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000d
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0020 is: 0x0000_0024
+<   reg[ 4] was: 0x0404_0404 is 0x0000_000d
+< 
+< [systemCall]13Opcode: 0x08   at 0x0000_0028
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x02
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x0b
+<   imm16  (16 bits)=0x     000b
+<   imm32  (32 bits)=0x0000_000b
+<   addr   (26 bits)=0x 002_000b
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000b
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0028 is: 0x0000_002c
+<   reg[ 2] was: 0x0000_0001 is 0x0000_000b
+< 
+< Opcode: 0x08   at 0x0000_002c
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x04
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x0a
+<   imm16  (16 bits)=0x     000a
+<   imm32  (32 bits)=0x0000_000a
+<   addr   (26 bits)=0x 004_000a
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000a
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_002c is: 0x0000_0030
+<   reg[ 4] was: 0x0000_000d is 0x0000_000a
+< 
+< [systemCall]
+< Opcode: 0x08   at 0x0000_0034
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x08
+<   rt      (5 bits)=0x08
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x01
+<   imm16  (16 bits)=0x     0001
+<   imm32  (32 bits)=0x0000_0001
+<   addr   (26 bits)=0x 108_0001
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0034 is: 0x0000_0038
+<   reg[ 8] was: 0x0000_0000 is 0x0000_0001
+< 
+< Opcode: 0x02   at 0x0000_0038
+<   --
+<   opcode  (6 bits)=0x02
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x04
+<   imm16  (16 bits)=0x     0004
+<   imm32  (32 bits)=0x0000_0004
+<   addr   (26 bits)=0x 000_0004
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =0
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =0
+<   branch     =0
+<   jump       =1
+< 
+<   --
+<   ALU.result=0x0000_0000
+<   ALU.zero  =1
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0038 is: 0x0000_0010
+< 
+< Opcode: 0x00   at 0x0000_0010
+<   funct: 0x2a
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x08
+<   rt      (5 bits)=0x0a
+<   rd      (5 bits)=0x0b
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x2a
+<   imm16  (16 bits)=0x     582a
+<   imm32  (32 bits)=0x0000_582a
+<   addr   (26 bits)=0x 10a_582a
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =3
+<   ALU.bNegate=1
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0010 is: 0x0000_0014
+< 
+< Opcode: 0x04   at 0x0000_0014
+<   --
+<   opcode  (6 bits)=0x04
+<   rs      (5 bits)=0x0b
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x09
+<   imm16  (16 bits)=0x     0009
+<   imm32  (32 bits)=0x0000_0009
+<   addr   (26 bits)=0x 160_0009
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=1
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =0
+<   branch     =1
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0014 is: 0x0000_0018
+< 
+< Opcode: 0x00   at 0x0000_0018
+<   funct: 0x20
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x09
+<   rt      (5 bits)=0x0c
+<   rd      (5 bits)=0x09
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x20
+<   imm16  (16 bits)=0x     4820
+<   imm32  (32 bits)=0x0000_4820
+<   addr   (26 bits)=0x 12c_4820
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0010
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0018 is: 0x0000_001c
+<   reg[ 9] was: 0x0000_000d is 0x0000_0010
+< 
+< Opcode: 0x08   at 0x0000_001c
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x02
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x01
+<   imm16  (16 bits)=0x     0001
+<   imm32  (32 bits)=0x0000_0001
+<   addr   (26 bits)=0x 002_0001
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_001c is: 0x0000_0020
+<   reg[ 2] was: 0x0000_000b is 0x0000_0001
+< 
+< Opcode: 0x00   at 0x0000_0020
+<   funct: 0x20
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x09
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x04
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x20
+<   imm16  (16 bits)=0x     2020
+<   imm32  (32 bits)=0x0000_2020
+<   addr   (26 bits)=0x 120_2020
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0010
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0020 is: 0x0000_0024
+<   reg[ 4] was: 0x0000_000a is 0x0000_0010
+< 
+< [systemCall]16Opcode: 0x08   at 0x0000_0028
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x02
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x0b
+<   imm16  (16 bits)=0x     000b
+<   imm32  (32 bits)=0x0000_000b
+<   addr   (26 bits)=0x 002_000b
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000b
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0028 is: 0x0000_002c
+<   reg[ 2] was: 0x0000_0001 is 0x0000_000b
+< 
+< Opcode: 0x08   at 0x0000_002c
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x04
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x0a
+<   imm16  (16 bits)=0x     000a
+<   imm32  (32 bits)=0x0000_000a
+<   addr   (26 bits)=0x 004_000a
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000a
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_002c is: 0x0000_0030
+<   reg[ 4] was: 0x0000_0010 is 0x0000_000a
+< 
+< [systemCall]
+< Opcode: 0x08   at 0x0000_0034
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x08
+<   rt      (5 bits)=0x08
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x01
+<   imm16  (16 bits)=0x     0001
+<   imm32  (32 bits)=0x0000_0001
+<   addr   (26 bits)=0x 108_0001
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0002
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0034 is: 0x0000_0038
+<   reg[ 8] was: 0x0000_0001 is 0x0000_0002
+< 
+< Opcode: 0x02   at 0x0000_0038
+<   --
+<   opcode  (6 bits)=0x02
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x04
+<   imm16  (16 bits)=0x     0004
+<   imm32  (32 bits)=0x0000_0004
+<   addr   (26 bits)=0x 000_0004
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =0
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =0
+<   branch     =0
+<   jump       =1
+< 
+<   --
+<   ALU.result=0x0000_0000
+<   ALU.zero  =1
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0038 is: 0x0000_0010
+< 
+< Opcode: 0x00   at 0x0000_0010
+<   funct: 0x2a
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x08
+<   rt      (5 bits)=0x0a
+<   rd      (5 bits)=0x0b
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x2a
+<   imm16  (16 bits)=0x     582a
+<   imm32  (32 bits)=0x0000_582a
+<   addr   (26 bits)=0x 10a_582a
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =3
+<   ALU.bNegate=1
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0010 is: 0x0000_0014
+< 
+< Opcode: 0x04   at 0x0000_0014
+<   --
+<   opcode  (6 bits)=0x04
+<   rs      (5 bits)=0x0b
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x09
+<   imm16  (16 bits)=0x     0009
+<   imm32  (32 bits)=0x0000_0009
+<   addr   (26 bits)=0x 160_0009
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=1
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =0
+<   branch     =1
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0014 is: 0x0000_0018
+< 
+< Opcode: 0x00   at 0x0000_0018
+<   funct: 0x20
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x09
+<   rt      (5 bits)=0x0c
+<   rd      (5 bits)=0x09
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x20
+<   imm16  (16 bits)=0x     4820
+<   imm32  (32 bits)=0x0000_4820
+<   addr   (26 bits)=0x 12c_4820
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0013
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0018 is: 0x0000_001c
+<   reg[ 9] was: 0x0000_0010 is 0x0000_0013
+< 
+< Opcode: 0x08   at 0x0000_001c
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x02
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x01
+<   imm16  (16 bits)=0x     0001
+<   imm32  (32 bits)=0x0000_0001
+<   addr   (26 bits)=0x 002_0001
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_001c is: 0x0000_0020
+<   reg[ 2] was: 0x0000_000b is 0x0000_0001
+< 
+< Opcode: 0x00   at 0x0000_0020
+<   funct: 0x20
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x09
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x04
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x20
+<   imm16  (16 bits)=0x     2020
+<   imm32  (32 bits)=0x0000_2020
+<   addr   (26 bits)=0x 120_2020
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0013
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0020 is: 0x0000_0024
+<   reg[ 4] was: 0x0000_000a is 0x0000_0013
+< 
+< [systemCall]19Opcode: 0x08   at 0x0000_0028
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x02
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x0b
+<   imm16  (16 bits)=0x     000b
+<   imm32  (32 bits)=0x0000_000b
+<   addr   (26 bits)=0x 002_000b
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000b
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0028 is: 0x0000_002c
+<   reg[ 2] was: 0x0000_0001 is 0x0000_000b
+< 
+< Opcode: 0x08   at 0x0000_002c
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x04
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x0a
+<   imm16  (16 bits)=0x     000a
+<   imm32  (32 bits)=0x0000_000a
+<   addr   (26 bits)=0x 004_000a
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000a
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_002c is: 0x0000_0030
+<   reg[ 4] was: 0x0000_0013 is 0x0000_000a
+< 
+< [systemCall]
+< Opcode: 0x08   at 0x0000_0034
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x08
+<   rt      (5 bits)=0x08
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x01
+<   imm16  (16 bits)=0x     0001
+<   imm32  (32 bits)=0x0000_0001
+<   addr   (26 bits)=0x 108_0001
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0003
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0034 is: 0x0000_0038
+<   reg[ 8] was: 0x0000_0002 is 0x0000_0003
+< 
+< Opcode: 0x02   at 0x0000_0038
+<   --
+<   opcode  (6 bits)=0x02
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x04
+<   imm16  (16 bits)=0x     0004
+<   imm32  (32 bits)=0x0000_0004
+<   addr   (26 bits)=0x 000_0004
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =0
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =0
+<   branch     =0
+<   jump       =1
+< 
+<   --
+<   ALU.result=0x0000_0000
+<   ALU.zero  =1
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0038 is: 0x0000_0010
+< 
+< Opcode: 0x00   at 0x0000_0010
+<   funct: 0x2a
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x08
+<   rt      (5 bits)=0x0a
+<   rd      (5 bits)=0x0b
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x2a
+<   imm16  (16 bits)=0x     582a
+<   imm32  (32 bits)=0x0000_582a
+<   addr   (26 bits)=0x 10a_582a
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =3
+<   ALU.bNegate=1
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0010 is: 0x0000_0014
+< 
+< Opcode: 0x04   at 0x0000_0014
+<   --
+<   opcode  (6 bits)=0x04
+<   rs      (5 bits)=0x0b
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x09
+<   imm16  (16 bits)=0x     0009
+<   imm32  (32 bits)=0x0000_0009
+<   addr   (26 bits)=0x 160_0009
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=1
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =0
+<   branch     =1
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0014 is: 0x0000_0018
+< 
+< Opcode: 0x00   at 0x0000_0018
+<   funct: 0x20
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x09
+<   rt      (5 bits)=0x0c
+<   rd      (5 bits)=0x09
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x20
+<   imm16  (16 bits)=0x     4820
+<   imm32  (32 bits)=0x0000_4820
+<   addr   (26 bits)=0x 12c_4820
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0016
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0018 is: 0x0000_001c
+<   reg[ 9] was: 0x0000_0013 is 0x0000_0016
+< 
+< Opcode: 0x08   at 0x0000_001c
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x02
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x01
+<   imm16  (16 bits)=0x     0001
+<   imm32  (32 bits)=0x0000_0001
+<   addr   (26 bits)=0x 002_0001
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_001c is: 0x0000_0020
+<   reg[ 2] was: 0x0000_000b is 0x0000_0001
+< 
+< Opcode: 0x00   at 0x0000_0020
+<   funct: 0x20
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x09
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x04
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x20
+<   imm16  (16 bits)=0x     2020
+<   imm32  (32 bits)=0x0000_2020
+<   addr   (26 bits)=0x 120_2020
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0016
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0020 is: 0x0000_0024
+<   reg[ 4] was: 0x0000_000a is 0x0000_0016
+< 
+< [systemCall]22Opcode: 0x08   at 0x0000_0028
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x02
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x0b
+<   imm16  (16 bits)=0x     000b
+<   imm32  (32 bits)=0x0000_000b
+<   addr   (26 bits)=0x 002_000b
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000b
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0028 is: 0x0000_002c
+<   reg[ 2] was: 0x0000_0001 is 0x0000_000b
+< 
+< Opcode: 0x08   at 0x0000_002c
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x04
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x0a
+<   imm16  (16 bits)=0x     000a
+<   imm32  (32 bits)=0x0000_000a
+<   addr   (26 bits)=0x 004_000a
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000a
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_002c is: 0x0000_0030
+<   reg[ 4] was: 0x0000_0016 is 0x0000_000a
+< 
+< [systemCall]
+< Opcode: 0x08   at 0x0000_0034
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x08
+<   rt      (5 bits)=0x08
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x01
+<   imm16  (16 bits)=0x     0001
+<   imm32  (32 bits)=0x0000_0001
+<   addr   (26 bits)=0x 108_0001
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0004
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0034 is: 0x0000_0038
+<   reg[ 8] was: 0x0000_0003 is 0x0000_0004
+< 
+< Opcode: 0x02   at 0x0000_0038
+<   --
+<   opcode  (6 bits)=0x02
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x04
+<   imm16  (16 bits)=0x     0004
+<   imm32  (32 bits)=0x0000_0004
+<   addr   (26 bits)=0x 000_0004
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =0
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =0
+<   branch     =0
+<   jump       =1
+< 
+<   --
+<   ALU.result=0x0000_0000
+<   ALU.zero  =1
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0038 is: 0x0000_0010
+< 
+< Opcode: 0x00   at 0x0000_0010
+<   funct: 0x2a
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x08
+<   rt      (5 bits)=0x0a
+<   rd      (5 bits)=0x0b
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x2a
+<   imm16  (16 bits)=0x     582a
+<   imm32  (32 bits)=0x0000_582a
+<   addr   (26 bits)=0x 10a_582a
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =3
+<   ALU.bNegate=1
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0010 is: 0x0000_0014
+< 
+< Opcode: 0x04   at 0x0000_0014
+<   --
+<   opcode  (6 bits)=0x04
+<   rs      (5 bits)=0x0b
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x09
+<   imm16  (16 bits)=0x     0009
+<   imm32  (32 bits)=0x0000_0009
+<   addr   (26 bits)=0x 160_0009
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=1
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =0
+<   branch     =1
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0014 is: 0x0000_0018
+< 
+< Opcode: 0x00   at 0x0000_0018
+<   funct: 0x20
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x09
+<   rt      (5 bits)=0x0c
+<   rd      (5 bits)=0x09
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x20
+<   imm16  (16 bits)=0x     4820
+<   imm32  (32 bits)=0x0000_4820
+<   addr   (26 bits)=0x 12c_4820
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0019
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0018 is: 0x0000_001c
+<   reg[ 9] was: 0x0000_0016 is 0x0000_0019
+< 
+< Opcode: 0x08   at 0x0000_001c
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x02
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x01
+<   imm16  (16 bits)=0x     0001
+<   imm32  (32 bits)=0x0000_0001
+<   addr   (26 bits)=0x 002_0001
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0001
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_001c is: 0x0000_0020
+<   reg[ 2] was: 0x0000_000b is 0x0000_0001
+< 
+< Opcode: 0x00   at 0x0000_0020
+<   funct: 0x20
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x09
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x04
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x20
+<   imm16  (16 bits)=0x     2020
+<   imm32  (32 bits)=0x0000_2020
+<   addr   (26 bits)=0x 120_2020
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0019
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0020 is: 0x0000_0024
+<   reg[ 4] was: 0x0000_000a is 0x0000_0019
+< 
+< [systemCall]25Opcode: 0x08   at 0x0000_0028
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x02
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x0b
+<   imm16  (16 bits)=0x     000b
+<   imm32  (32 bits)=0x0000_000b
+<   addr   (26 bits)=0x 002_000b
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000b
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0028 is: 0x0000_002c
+<   reg[ 2] was: 0x0000_0001 is 0x0000_000b
+< 
+< Opcode: 0x08   at 0x0000_002c
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x04
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x0a
+<   imm16  (16 bits)=0x     000a
+<   imm32  (32 bits)=0x0000_000a
+<   addr   (26 bits)=0x 004_000a
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000a
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_002c is: 0x0000_0030
+<   reg[ 4] was: 0x0000_0019 is 0x0000_000a
+< 
+< [systemCall]
+< Opcode: 0x08   at 0x0000_0034
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x08
+<   rt      (5 bits)=0x08
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x01
+<   imm16  (16 bits)=0x     0001
+<   imm32  (32 bits)=0x0000_0001
+<   addr   (26 bits)=0x 108_0001
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0005
+<   ALU.zero  =0
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0034 is: 0x0000_0038
+<   reg[ 8] was: 0x0000_0004 is 0x0000_0005
+< 
+< Opcode: 0x02   at 0x0000_0038
+<   --
+<   opcode  (6 bits)=0x02
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x04
+<   imm16  (16 bits)=0x     0004
+<   imm32  (32 bits)=0x0000_0004
+<   addr   (26 bits)=0x 000_0004
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =0
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =0
+<   branch     =0
+<   jump       =1
+< 
+<   --
+<   ALU.result=0x0000_0000
+<   ALU.zero  =1
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0038 is: 0x0000_0010
+< 
+< Opcode: 0x00   at 0x0000_0010
+<   funct: 0x2a
+<   --
+<   opcode  (6 bits)=0x00
+<   rs      (5 bits)=0x08
+<   rt      (5 bits)=0x0a
+<   rd      (5 bits)=0x0b
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x2a
+<   imm16  (16 bits)=0x     582a
+<   imm32  (32 bits)=0x0000_582a
+<   addr   (26 bits)=0x 10a_582a
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =3
+<   ALU.bNegate=1
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =1
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0000
+<   ALU.zero  =1
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0010 is: 0x0000_0014
+<   reg[11] was: 0x0000_0001 is 0x0000_0000
+< 
+< Opcode: 0x04   at 0x0000_0014
+<   --
+<   opcode  (6 bits)=0x04
+<   rs      (5 bits)=0x0b
+<   rt      (5 bits)=0x00
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x09
+<   imm16  (16 bits)=0x     0009
+<   imm32  (32 bits)=0x0000_0009
+<   addr   (26 bits)=0x 160_0009
+<   --
+<   err=0
+<   --
+<   ALUsrc     =0
+<   ALU.op     =2
+<   ALU.bNegate=1
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =0
+<   branch     =1
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_0000
+<   ALU.zero  =1
+<   --
+<   memResult.readVal=0x0000_0000
+<   --
+<   PC was: 0x0000_0014 is: 0x0000_003c
+< 
+< Opcode: 0x08   at 0x0000_003c
+<   --
+<   opcode  (6 bits)=0x08
+<   rs      (5 bits)=0x00
+<   rt      (5 bits)=0x02
+<   rd      (5 bits)=0x00
+<   shamt   (5 bits)=0x00
+<   funct   (6 bits)=0x0a
+<   imm16  (16 bits)=0x     000a
+<   imm32  (32 bits)=0x0000_000a
+<   addr   (26 bits)=0x 002_000a
+<   --
+<   err=0
+<   --
+<   ALUsrc     =1
+<   ALU.op     =2
+<   ALU.bNegate=0
+<   memRead    =0
+<   memWrite   =0
+<   memToReg   =0
+<   regDst     =0
+<   regWrite   =1
+<   branch     =0
+<   jump       =0
+< 
+<   --
+<   ALU.result=0x0000_000a
+1772,1773c32,33
+<   PC was: 0x0000_003c is: 0x0000_0040
+<   reg[ 2] was: 0x0000_000b is 0x0000_000a
+---
+> ERROR: The PC did not change!
+>   PC was: 0x0000_0000 is: 0x0000_0000
+1775d34
+< [systemCall]--- syscall 10 executed: Normal termination of the assembly language program.
+     ----- END diff ----
+
+Compiling the testcase test_13_multipleInstructions1-noDebug.c, and linking it to proj09.c proj09_test_commonCode.c ...
+******************************
+* TESTCASE 'test_13_multipleInstructions1-noDebug.c' FAILED
+******************************
+
+     ----- diff OUTPUT ----
+1,6c1
+< 13
+< 16
+< 19
+< 22
+< 25
+< --- syscall 10 executed: Normal termination of the assembly language program.
+---
+> ERROR: The PC did not change!
+     ----- END diff ----
+
+
+*******************************************
+*            OVERALL REPORT
+* attempts: 10
+* passed:   5
+*
+* score:    35
+*
+* failed:  
+*     test_06_execMEM.c
+*     test_10_singleInstruction.c
+*     test_11_syscalls.c
+*     test_12_multipleInstructions1.c
+*     test_13_multipleInstructions1-noDebug.c
+*
+*******************************************

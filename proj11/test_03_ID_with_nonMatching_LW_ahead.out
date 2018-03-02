@@ -1,0 +1,330 @@
+Before execute_ID(): pc=0x1f7e_ba0c instruction=0x0232_8020
+  ID_EX.rs    = 17
+  ID_EX.rt    = 18
+  ID_EX.rd    = 16
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_8020
+  ID_EX.imm32 = 0xffff_8020
+  ---
+  ID_EX.rsVal = 0x1111_1111
+  ID_EX.rtVal = 0x1212_1212
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x1e89_8b84 instruction=0x0295_9822
+  ID_EX.rs    = 20
+  ID_EX.rt    = 21
+  ID_EX.rd    = 19
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_9822
+  ID_EX.imm32 = 0xffff_9822
+  ---
+  ID_EX.rsVal = 0x1414_1414
+  ID_EX.rtVal = 0x1515_1515
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 1
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x07b4_9904 instruction=0x216a_ffff
+  ID_EX.rs    = 11
+  ID_EX.rt    = 10
+  ID_EX.rd    = 31
+  ID_EX.shamt = 31
+  ID_EX.imm16 = 0x0000_ffff
+  ID_EX.imm32 = 0xffff_ffff
+  ---
+  ID_EX.rsVal = 0x0b0b_0b0b
+  ID_EX.rtVal = 0x0a0a_0a0a
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x3e5a_531c instruction=0x21ac_0010
+  ID_EX.rs    = 13
+  ID_EX.rt    = 12
+  ID_EX.rd    = 0
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0010
+  ID_EX.imm32 = 0x0000_0010
+  ---
+  ID_EX.rsVal = 0x0d0d_0d0d
+  ID_EX.rtVal = 0x0c0c_0c0c
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x24b7_85ac instruction=0x0002_0821
+  ID_EX.rs    = 0
+  ID_EX.rt    = 2
+  ID_EX.rd    = 1
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0821
+  ID_EX.imm32 = 0x0000_0821
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x0202_0202
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x1939_abf4 instruction=0x0085_1823
+  ID_EX.rs    = 4
+  ID_EX.rt    = 5
+  ID_EX.rd    = 3
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_1823
+  ID_EX.imm32 = 0x0000_1823
+  ---
+  ID_EX.rsVal = 0x0404_0404
+  ID_EX.rtVal = 0x0505_0505
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 1
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x3ecc_e388 instruction=0x24e6_1234
+  ID_EX.rs    = 7
+  ID_EX.rt    = 6
+  ID_EX.rd    = 2
+  ID_EX.shamt = 8
+  ID_EX.imm16 = 0x0000_1234
+  ID_EX.imm32 = 0x0000_1234
+  ---
+  ID_EX.rsVal = 0x0707_0707
+  ID_EX.rtVal = 0x0606_0606
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x360e_ea04 instruction=0x014b_4824
+  ID_EX.rs    = 10
+  ID_EX.rt    = 11
+  ID_EX.rd    = 9
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_4824
+  ID_EX.imm32 = 0x0000_4824
+  ---
+  ID_EX.rsVal = 0x0a0a_0a0a
+  ID_EX.rtVal = 0x0b0b_0b0b
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 0
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x5fc4_b668 instruction=0x01ae_6025
+  ID_EX.rs    = 13
+  ID_EX.rt    = 14
+  ID_EX.rd    = 12
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_6025
+  ID_EX.imm32 = 0x0000_6025
+  ---
+  ID_EX.rsVal = 0x0d0d_0d0d
+  ID_EX.rtVal = 0x0e0e_0e0e
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 1
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x099d_cc9c instruction=0x320f_5678
+  ID_EX.rs    = 16
+  ID_EX.rt    = 15
+  ID_EX.rd    = 10
+  ID_EX.shamt = 25
+  ID_EX.imm16 = 0x0000_5678
+  ID_EX.imm32 = 0x0000_5678
+  ---
+  ID_EX.rsVal = 0x1010_1010
+  ID_EX.rtVal = 0x0f0f_0f0f
+  ---
+  ID_EX.ALUsrc      = 2
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 0
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x4e92_21ec instruction=0x3672_9abc
+  ID_EX.rs    = 19
+  ID_EX.rt    = 18
+  ID_EX.rd    = 19
+  ID_EX.shamt = 10
+  ID_EX.imm16 = 0x0000_9abc
+  ID_EX.imm32 = 0xffff_9abc
+  ---
+  ID_EX.rsVal = 0x1313_1313
+  ID_EX.rtVal = 0x1212_1212
+  ---
+  ID_EX.ALUsrc      = 2
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 1
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x6468_aeac instruction=0x02d7_a82a
+  ID_EX.rs    = 22
+  ID_EX.rt    = 23
+  ID_EX.rd    = 21
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_a82a
+  ID_EX.imm32 = 0xffff_a82a
+  ---
+  ID_EX.rsVal = 0x1616_1616
+  ID_EX.rtVal = 0x1717_1717
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 1
+  ID_EX.ALU.op      = 3
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x0045_5310 instruction=0x2b38_ffff
+  ID_EX.rs    = 25
+  ID_EX.rt    = 24
+  ID_EX.rd    = 31
+  ID_EX.shamt = 31
+  ID_EX.imm16 = 0x0000_ffff
+  ID_EX.imm32 = 0xffff_ffff
+  ---
+  ID_EX.rsVal = 0x1919_1919
+  ID_EX.rtVal = 0x1818_1818
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 1
+  ID_EX.ALU.op      = 3
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x770d_1e30 instruction=0x8c1a_0068
+  ID_EX.rs    = 0
+  ID_EX.rt    = 26
+  ID_EX.rd    = 0
+  ID_EX.shamt = 1
+  ID_EX.imm16 = 0x0000_0068
+  ID_EX.imm32 = 0x0000_0068
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x1a1a_1a1a
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 1
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 1
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+Before execute_ID(): pc=0x1467_51a8 instruction=0xac1d_006c
+  ID_EX.rs    = 0
+  ID_EX.rt    = 29
+  ID_EX.rd    = 0
+  ID_EX.shamt = 1
+  ID_EX.imm16 = 0x0000_006c
+  ID_EX.imm32 = 0x0000_006c
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x1d1d_1d1d
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 1
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 0
+

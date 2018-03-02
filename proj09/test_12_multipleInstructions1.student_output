@@ -1,0 +1,34 @@
+Opcode: 0x08   at 0x0000_0000
+  --
+  opcode  (6 bits)=0x08
+  rs      (5 bits)=0x00
+  rt      (5 bits)=0x08
+  rd      (5 bits)=0x00
+  shamt   (5 bits)=0x00
+  funct   (6 bits)=0x00
+  imm16  (16 bits)=0x     0000
+  imm32  (32 bits)=0x0000_0000
+  addr   (26 bits)=0x 008_0000
+  --
+  err=0
+  --
+  ALUsrc     =1
+  ALU.op     =2
+  ALU.bNegate=0
+  memRead    =0
+  memWrite   =0
+  memToReg   =0
+  regDst     =0
+  regWrite   =1
+  branch     =0
+  jump       =0
+
+  --
+  ALU.result=0x0000_0000
+  ALU.zero  =0
+  --
+  memResult.readVal=0x0000_0000
+  --
+ERROR: The PC did not change!
+  PC was: 0x0000_0000 is: 0x0000_0000
+

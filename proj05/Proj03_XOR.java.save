@@ -1,0 +1,38 @@
+public class Proj03_XOR extends Proj03_BinaryBase{
+
+	private Proj03_BinaryBase x, y, z, answer;
+
+	public Proj03_XOR(){
+
+		x = new Proj03_AND();
+		y = new Proj03_OR ();
+		z = new Proj03_NOT();
+                answer = new Proj03_AND();
+	}
+
+	public void execute(){
+
+           //execute and on x.a and x.b
+           x.a = a;
+           x.b = b;
+           x.execute();
+
+           //execute or on y.b and y.a
+           y.a = a;
+           y.b = b;
+           y.execute();
+
+           //excute not on z.a
+           z.a = x.out;
+           z.execute();
+
+           //answer will represent (a or b) and not(a and b)
+           answer.a = y.out;
+           answer.b = z.out;
+           answer.execute();
+
+           out = answer.out;
+
+	}//exeute
+
+}//XOR

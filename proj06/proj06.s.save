@@ -1,0 +1,123 @@
+
+.text
+.globl countOutLoud
+ countOutLoud:
+              #prolog
+              addiu $sp, $sp, -24
+              sw $fp, 0($sp)
+              sw $ra, 4($sp)
+
+              addiu $sp, $sp, -16
+              sw $t1, 8 ($sp)
+              sw $t2, 4( $sp)
+              sw $t3, 0($sp)
+
+              add $t0, $zero, 1 #i=1
+              add $t1, $zero, $a0  #t1 = num
+
+              Loop:
+                   slt $t2, $t1, $t0  # i > num
+                   bne $t2, $zero, THERE #if i>num branch
+
+                   #print i then a new line
+                   li $v0, 1  #print int at i
+                   add $a0, $t0, $zero
+                   syscall
+
+                   addi $v0, $zero 11 #print char newline
+                   addi $a0, $zero, 0xa
+                   syscall
+
+                   add $t0, $t0, 1 #i++
+                   j Loop
+
+              THERE:
+                   lw $t3, 0($sp) #restore $t3
+                   lw $t2, 4($sp) #restore $t2
+                   lw $t1, 8($sp) #restore $t1
+                   lw $t0, 12($sp) #restore $t0
+                   addiu $sp, $sp, 16
+
+                   lw $ra, 4($sp)
+                   lw $fp, 0($sp)
+                   addiu $sp, $sp, 24
+                   jr $ra
+
+.globl mul16_simple
+ mul16_simple:
+             #prolog
+             addiu $sp, $sp, -24
+             sw  $fp, 4($sp)
+             sw  $ra, 0($sp)
+
+             add $t0, $zero, 0   #retVal = 0
+             add $t1, $zero, 0   #i = 0
+
+             LOOP2:
+                  slt $t2, $t1, $a1       #t3 = i > b
+                  beq $t2, $zero, THERE2  #if(i>b) branch
+
+                  add $t0, $t0, $a0        #retVal+=a;
+                  add $t1, $t1, 1          #i++
+
+                  j LOOP2
+
+             THERE2:
+                  add $v0, $t0, $zero    #return retVal
+
+                  lw $ra, 0($sp)
+                  lw $fp, 4($sp)
+                  addiu $sp, $sp, 24
+                  jr $ra
+
+.globl print_mul16_simple
+.data
+     my_string: .ascii "result="
+
+.text
+print_mul16_simple:
+                    #prolog
+                    addiu $sp, $sp, -20
+                    sw $fp, 4($sp)
+                    sw $ra, 0($sp)
+
+                    add $t0, $zero, $a0 #t0 = a
+                    
+                    #print my string first
+                    addi $v0, $zero, 4
+                    la $a0, my_string
+                    syscall
+                    
+                    add $a0, $t0, $zero  #a = t0
+       
+                    #call function
+                    jal mul16_simple
+
+                    #print return value
+                    add $a0, $v0, $zero
+                    addi $v0, $zero, 1
+                    syscall
+
+                    #print newline
+                    addi $v0, $zero 11 #print char newline
+                    addi $a0, $zero, 0xa
+                    syscall
+
+                    lw $ra, 0($sp)
+                    lw $fp, 4($sp)
+                    addiu $sp, $sp, 20
+                    jr $ra
+
+.globl print_random_sums
+
+print_random_sums:
+                   #prolog
+                   addiu $sp, $sp, -24
+                   sw $fp, 4($sp)
+                   sw $ra, 0($sp)
+
+                   #set i and count
+                   add $t0, $zero, 0    #i = 0
+                   add $t1, $zero, $a0  #t1 = ount
+
+

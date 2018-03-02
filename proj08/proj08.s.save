@@ -1,0 +1,21 @@
+# Author: Christian Soto
+#
+# This program, implements 5 functions or subroutines. Some of these
+# functions will get called by other programs in the directory.
+# Sometimes, some of these methods call eachother.
+
+.data
+	string1: .ascii "1: "
+	string2: .ascii "2: "
+
+.text
+.globl mergePrint
+mergePrint:
+        addiu $sp, $sp, -24
+        sw $fp, 0($sp)
+        sw $ra, 4($sp)
+
+        la $t0, $a0          #
+        la $t2, $a2
+        add $t1, $zero, 1 
+        add $t3, $zero, $a3

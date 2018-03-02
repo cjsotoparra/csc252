@@ -1,0 +1,8 @@
+false + false = false (carry false)
+false + false = false (carry false)
+false +  true =  true (carry false)
+false +  true =  true (carry false)
+ true + false =  true (carry false)
+ true + false =  true (carry false)
+ true +  true = false (carry  true)
+ true +  true = false (carry  true)

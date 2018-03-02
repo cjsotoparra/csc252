@@ -1,0 +1,58 @@
+#include "proj07.h"
+
+int CLA_calcGenerate (int bitNum, int a, int b){
+
+           //gi(bitwise AND)
+           int bita = (a >> bitNum); //extract bit from a
+           int bitb = (b >> bitNum); //extract bit from b
+
+           //Perfrom bitwise AND
+           int bitAND = bita && bitb;
+
+           //return the value
+           return bitAND;
+}
+
+int CLA_calcPropagate(int bitNum, int a, int b){
+
+           //pi(bitwise OR)
+           int bita = (a >> bitNum) && 1; //extract bit from a
+           int bitb = (b >> bitNum) && 1;//extract bit from b
+
+           //Perfrom bitwise AND
+           int bitAND = bita || bitb;
+
+           //return the value
+           return bitAND;
+}
+
+int  CLA_calcSuperGenerate (int nibbleNum, int generate, int propagate){
+
+          int i;
+          int j;
+
+          int nibbleBitA;
+          int nibbleBitB;
+
+          for(i = 0; i<3; i++){
+
+                //get generte from bit at nibble
+                nibbleBitA = (generate >> nibbleNum-i) && 1;
+
+                //now perform generate on the bit
+                nibbleBitA = CLA_calcGenerate(nibbleBitA, generate, propagate);
+
+                //get the propagate
+                if(i!=0){
+
+                       for(j = 1; j<3; j++)
+
+                              
+
+                       }//for loop 2
+                }//if statement
+
+          }//for loop
+
+          return nibbleNum;
+}

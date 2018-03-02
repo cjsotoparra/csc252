@@ -1,0 +1,1099 @@
+Before execute_ID(): pc=0x3b2a_5b64 instruction=0x0232_8020
+  ID_EX.rs    = 17
+  ID_EX.rt    = 18
+  ID_EX.rd    = 16
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_8020
+  ID_EX.imm32 = 0xffff_8020
+  ---
+  ID_EX.rsVal = 0x1111_1111
+  ID_EX.rtVal = 0x1212_1212
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x1212_1212
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 16
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0x2323_2323
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x2323_2323
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 16
+  MEM_WB.regWrite = 1
+
+  REGISTER 16 CHANGED.  Was: 0x1010_1010 Now: 0x2323_2323
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x1a80_0ae4 instruction=0x0295_9822
+  ID_EX.rs    = 20
+  ID_EX.rt    = 21
+  ID_EX.rd    = 19
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_9822
+  ID_EX.imm32 = 0xffff_9822
+  ---
+  ID_EX.rsVal = 0x1414_1414
+  ID_EX.rtVal = 0x1515_1515
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 1
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x1515_1515
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 19
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0xfefe_feff
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0xfefe_feff
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 19
+  MEM_WB.regWrite = 1
+
+  REGISTER 19 CHANGED.  Was: 0x1313_1313 Now: 0xfefe_feff
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x1cab_e6bc instruction=0x216a_ffff
+  ID_EX.rs    = 11
+  ID_EX.rt    = 10
+  ID_EX.rd    = 31
+  ID_EX.shamt = 31
+  ID_EX.imm16 = 0x0000_ffff
+  ID_EX.imm32 = 0xffff_ffff
+  ---
+  ID_EX.rsVal = 0x0b0b_0b0b
+  ID_EX.rtVal = 0x0a0a_0a0a
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x0a0a_0a0a
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 10
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0x0b0b_0b0a
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0b0b_0b0a
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 10
+  MEM_WB.regWrite = 1
+
+  REGISTER 10 CHANGED.  Was: 0x0a0a_0a0a Now: 0x0b0b_0b0a
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x5b8b_290c instruction=0x21ac_0010
+  ID_EX.rs    = 13
+  ID_EX.rt    = 12
+  ID_EX.rd    = 0
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0010
+  ID_EX.imm32 = 0x0000_0010
+  ---
+  ID_EX.rsVal = 0x0d0d_0d0d
+  ID_EX.rtVal = 0x0c0c_0c0c
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x0c0c_0c0c
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 12
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0x0d0d_0d1d
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0d0d_0d1d
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 12
+  MEM_WB.regWrite = 1
+
+  REGISTER 12 CHANGED.  Was: 0x0c0c_0c0c Now: 0x0d0d_0d1d
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x791b_95dc instruction=0x0002_0821
+  ID_EX.rs    = 0
+  ID_EX.rt    = 2
+  ID_EX.rd    = 1
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0821
+  ID_EX.imm32 = 0x0000_0821
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x0202_0202
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x0202_0202
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 1
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0x0202_0202
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0202_0202
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 1
+  MEM_WB.regWrite = 1
+
+  REGISTER 1 CHANGED.  Was: 0x0101_0101 Now: 0x0202_0202
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x644c_e280 instruction=0x0085_1823
+  ID_EX.rs    = 4
+  ID_EX.rt    = 5
+  ID_EX.rd    = 3
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_1823
+  ID_EX.imm32 = 0x0000_1823
+  ---
+  ID_EX.rsVal = 0x0404_0404
+  ID_EX.rtVal = 0x0505_0505
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 1
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x0505_0505
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 3
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0xfefe_feff
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0xfefe_feff
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 3
+  MEM_WB.regWrite = 1
+
+  REGISTER 3 CHANGED.  Was: 0x0303_0303 Now: 0xfefe_feff
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x2015_8574 instruction=0x24e6_1234
+  ID_EX.rs    = 7
+  ID_EX.rt    = 6
+  ID_EX.rd    = 2
+  ID_EX.shamt = 8
+  ID_EX.imm16 = 0x0000_1234
+  ID_EX.imm32 = 0x0000_1234
+  ---
+  ID_EX.rsVal = 0x0707_0707
+  ID_EX.rtVal = 0x0606_0606
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x0606_0606
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 6
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0x0707_193b
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0707_193b
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 6
+  MEM_WB.regWrite = 1
+
+  REGISTER 6 CHANGED.  Was: 0x0606_0606 Now: 0x0707_193b
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x4b92_36c0 instruction=0x014b_4824
+  ID_EX.rs    = 10
+  ID_EX.rt    = 11
+  ID_EX.rd    = 9
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_4824
+  ID_EX.imm32 = 0x0000_4824
+  ---
+  ID_EX.rsVal = 0x0b0b_0b0a
+  ID_EX.rtVal = 0x0b0b_0b0b
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 0
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x0b0b_0b0b
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 9
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0x0b0b_0b0a
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0b0b_0b0a
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 9
+  MEM_WB.regWrite = 1
+
+  REGISTER 9 CHANGED.  Was: 0x0909_0909 Now: 0x0b0b_0b0a
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x115a_1a10 instruction=0x01ae_6025
+  ID_EX.rs    = 13
+  ID_EX.rt    = 14
+  ID_EX.rd    = 12
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_6025
+  ID_EX.imm32 = 0x0000_6025
+  ---
+  ID_EX.rsVal = 0x0d0d_0d0d
+  ID_EX.rtVal = 0x0e0e_0e0e
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 1
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x0e0e_0e0e
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 12
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0x0f0f_0f0f
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0f0f_0f0f
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 12
+  MEM_WB.regWrite = 1
+
+  REGISTER 12 CHANGED.  Was: 0x0d0d_0d1d Now: 0x0f0f_0f0f
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x47c4_e504 instruction=0x320f_5678
+  ID_EX.rs    = 16
+  ID_EX.rt    = 15
+  ID_EX.rd    = 10
+  ID_EX.shamt = 25
+  ID_EX.imm16 = 0x0000_5678
+  ID_EX.imm32 = 0x0000_5678
+  ---
+  ID_EX.rsVal = 0x2323_2323
+  ID_EX.rtVal = 0x0f0f_0f0f
+  ---
+  ID_EX.ALUsrc      = 2
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 0
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x0f0f_0f0f
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 15
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0x0000_0220
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0000_0220
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 15
+  MEM_WB.regWrite = 1
+
+  REGISTER 15 CHANGED.  Was: 0x0f0f_0f0f Now: 0x0000_0220
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x5f28_3134 instruction=0x3672_9abc
+  ID_EX.rs    = 19
+  ID_EX.rt    = 18
+  ID_EX.rd    = 19
+  ID_EX.shamt = 10
+  ID_EX.imm16 = 0x0000_9abc
+  ID_EX.imm32 = 0xffff_9abc
+  ---
+  ID_EX.rsVal = 0xfefe_feff
+  ID_EX.rtVal = 0x1212_1212
+  ---
+  ID_EX.ALUsrc      = 2
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 1
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x1212_1212
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 18
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0xfefe_feff
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0xfefe_feff
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 18
+  MEM_WB.regWrite = 1
+
+  REGISTER 18 CHANGED.  Was: 0x1212_1212 Now: 0xfefe_feff
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x1689_5458 instruction=0x02d7_a82a
+  ID_EX.rs    = 22
+  ID_EX.rt    = 23
+  ID_EX.rd    = 21
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_a82a
+  ID_EX.imm32 = 0xffff_a82a
+  ---
+  ID_EX.rsVal = 0x1616_1616
+  ID_EX.rtVal = 0x1717_1717
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 1
+  ID_EX.ALU.op      = 3
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 1
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x1717_1717
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 21
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0x0000_0001
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0000_0001
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 21
+  MEM_WB.regWrite = 1
+
+  REGISTER 21 CHANGED.  Was: 0x1515_1515 Now: 0x0000_0001
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x69b2_38ec instruction=0x2b38_ffff
+  ID_EX.rs    = 25
+  ID_EX.rt    = 24
+  ID_EX.rd    = 31
+  ID_EX.shamt = 31
+  ID_EX.imm16 = 0x0000_ffff
+  ID_EX.imm32 = 0xffff_ffff
+  ---
+  ID_EX.rsVal = 0x1919_1919
+  ID_EX.rtVal = 0x1818_1818
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 1
+  ID_EX.ALU.op      = 3
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x1818_1818
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 24
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0x0000_0000
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0000_0000
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 24
+  MEM_WB.regWrite = 1
+
+  REGISTER 24 CHANGED.  Was: 0x1818_1818 Now: 0x0000_0000
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x2035_bc9c instruction=0x8c1a_0068
+  ID_EX.rs    = 0
+  ID_EX.rt    = 26
+  ID_EX.rd    = 0
+  ID_EX.shamt = 1
+  ID_EX.imm16 = 0x0000_0068
+  ID_EX.imm32 = 0x0000_0068
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x1a1a_1a1a
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 1
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 1
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x1a1a_1a1a
+  ---
+  EX_MEM.memRead  = 1
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 1
+  ---
+  EX_MEM.destReg  = 26
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0x0000_0068
+
+  MEM_WB.memToReg  = 1
+  MEM_WB.aluResult = 0x0000_0068
+  MEM_WB.memResult = 0xf068_0068
+  ---
+  MEM_WB.destReg  = 26
+  MEM_WB.regWrite = 1
+
+  REGISTER 26 CHANGED.  Was: 0x1a1a_1a1a Now: 0xf068_0068
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x4c73_c330 instruction=0xac1d_006c
+  ID_EX.rs    = 0
+  ID_EX.rt    = 29
+  ID_EX.rd    = 0
+  ID_EX.shamt = 1
+  ID_EX.imm16 = 0x0000_006c
+  ID_EX.imm32 = 0x0000_006c
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x1d1d_1d1d
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 1
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 0
+
+  EX_MEM.rtVal = 0x1d1d_1d1d
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 1
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 29
+  EX_MEM.regWrite = 0
+  ---
+  EX_MEM.aluResult = 0x0000_006c
+
+  MEM CHANGED: Address=0x0000_006c   Was: 0xf06c_006c Now: 0x1d1d_1d1d
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0000_006c
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 29
+  MEM_WB.regWrite = 0
+
+  A total of 0 registers were changed.
+
+Before execute_ID(): pc=0x126b_6c7c instruction=0x1109_8104
+  ID_EX.rs    = 0
+  ID_EX.rt    = 0
+  ID_EX.rd    = 0
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0000
+  ID_EX.imm32 = 0x0000_0000
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x0000_0000
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 0
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 0
+
+  EX_MEM.rtVal = 0x0000_0000
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 0
+  EX_MEM.regWrite = 0
+  ---
+  EX_MEM.aluResult = 0x0000_0000
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0000_0000
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 0
+  MEM_WB.regWrite = 0
+
+  A total of 0 registers were changed.
+
+Before execute_ID(): pc=0x0d85_1fa8 instruction=0x110a_c010
+  ID_EX.rs    = 0
+  ID_EX.rt    = 0
+  ID_EX.rd    = 0
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0000
+  ID_EX.imm32 = 0x0000_0000
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x0000_0000
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 0
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 0
+
+  EX_MEM.rtVal = 0x0000_0000
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 0
+  EX_MEM.regWrite = 0
+  ---
+  EX_MEM.aluResult = 0x0000_0000
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0000_0000
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 0
+  MEM_WB.regWrite = 0
+
+  A total of 0 registers were changed.
+
+Before execute_ID(): pc=0x5261_f07c instruction=0x154b_f000
+  ID_branchControl.stallIF    = 0
+  ID_branchControl.branch     = 1
+  ID_branchControl.branchDest = 0x5261_b080
+  ---
+  ID_EX.rs    = 0
+  ID_EX.rt    = 0
+  ID_EX.rd    = 0
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0000
+  ID_EX.imm32 = 0x0000_0000
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x0000_0000
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 0
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 0
+
+  EX_MEM.rtVal = 0x0000_0000
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 0
+  EX_MEM.regWrite = 0
+  ---
+  EX_MEM.aluResult = 0x0000_0000
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0000_0000
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 0
+  MEM_WB.regWrite = 0
+
+  A total of 0 registers were changed.
+
+Before execute_ID(): pc=0x04d7_61a8 instruction=0x154c_9000
+  ID_branchControl.stallIF    = 0
+  ID_branchControl.branch     = 1
+  ID_branchControl.branchDest = 0x04d5_a1ac
+  ---
+  ID_EX.rs    = 0
+  ID_EX.rt    = 0
+  ID_EX.rd    = 0
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0000
+  ID_EX.imm32 = 0x0000_0000
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x0000_0000
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 0
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 0
+
+  EX_MEM.rtVal = 0x0000_0000
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 0
+  EX_MEM.regWrite = 0
+  ---
+  EX_MEM.aluResult = 0x0000_0000
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0000_0000
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 0
+  MEM_WB.regWrite = 0
+
+  A total of 0 registers were changed.
+
+Before execute_ID(): pc=0x0343_0594 instruction=0x0923_4567
+  ID_branchControl.stallIF    = 0
+  ID_branchControl.branch     = 1
+  ID_branchControl.branchDest = 0x048d_159c
+  ---
+  ID_EX.rs    = 0
+  ID_EX.rt    = 0
+  ID_EX.rd    = 0
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0000
+  ID_EX.imm32 = 0x0000_0000
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x0000_0000
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 0
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 0
+
+  EX_MEM.rtVal = 0x0000_0000
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 0
+  EX_MEM.regWrite = 0
+  ---
+  EX_MEM.aluResult = 0x0000_0000
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0000_0000
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 0
+  MEM_WB.regWrite = 0
+
+  A total of 0 registers were changed.
+
+Before execute_ID(): pc=0x5d9f_e548 instruction=0x0bff_ffff
+  ID_branchControl.stallIF    = 0
+  ID_branchControl.branch     = 1
+  ID_branchControl.branchDest = 0x5fff_fffc
+  ---
+  ID_EX.rs    = 0
+  ID_EX.rt    = 0
+  ID_EX.rd    = 0
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0000
+  ID_EX.imm32 = 0x0000_0000
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x0000_0000
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 0
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 0
+
+  EX_MEM.rtVal = 0x0000_0000
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 0
+  EX_MEM.regWrite = 0
+  ---
+  EX_MEM.aluResult = 0x0000_0000
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0000_0000
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 0
+  MEM_WB.regWrite = 0
+
+  A total of 0 registers were changed.
+
+Before execute_ID(): pc=0x2691_47f8 instruction=0x0f65_4321
+  ID_branchControl.stallIF    = 0
+  ID_branchControl.branch     = 1
+  ID_branchControl.branchDest = 0x2d95_0c84
+  ---
+  ID_EX.rs    = 0
+  ID_EX.rt    = 31
+  ID_EX.rd    = 0
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0000
+  ID_EX.imm32 = 0x2691_47fc
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x0000_0000
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x0000_0000
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 31
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0x2691_47fc
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x2691_47fc
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 31
+  MEM_WB.regWrite = 1
+
+  REGISTER 31 CHANGED.  Was: 0x1f1f_1f1f Now: 0x2691_47fc
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x57f8_ac34 instruction=0x0c00_000f
+  ID_branchControl.stallIF    = 0
+  ID_branchControl.branch     = 1
+  ID_branchControl.branchDest = 0x5000_003c
+  ---
+  ID_EX.rs    = 0
+  ID_EX.rt    = 31
+  ID_EX.rd    = 0
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0000
+  ID_EX.imm32 = 0x57f8_ac38
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x0000_0000
+  ---
+  ID_EX.ALUsrc      = 1
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 2
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 1
+
+  EX_MEM.rtVal = 0x0000_0000
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 31
+  EX_MEM.regWrite = 1
+  ---
+  EX_MEM.aluResult = 0x57f8_ac38
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x57f8_ac38
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 31
+  MEM_WB.regWrite = 1
+
+  REGISTER 31 CHANGED.  Was: 0x2691_47fc Now: 0x57f8_ac38
+  A total of 1 registers were changed.
+
+Before execute_ID(): pc=0x14dc_5790 instruction=0x03a0_0008
+  ID_branchControl.stallIF    = 0
+  ID_branchControl.branch     = 1
+  ID_branchControl.branchDest = 0x1d1d_1d1d
+  ---
+  ID_EX.rs    = 0
+  ID_EX.rt    = 0
+  ID_EX.rd    = 0
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0000
+  ID_EX.imm32 = 0x0000_0000
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x0000_0000
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 0
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 0
+
+  EX_MEM.rtVal = 0x0000_0000
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 0
+  EX_MEM.regWrite = 0
+  ---
+  EX_MEM.aluResult = 0x0000_0000
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0000_0000
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 0
+  MEM_WB.regWrite = 0
+
+  A total of 0 registers were changed.
+
+Before execute_ID(): pc=0x2c96_06ac instruction=0x0200_0008
+  ID_branchControl.stallIF    = 0
+  ID_branchControl.branch     = 1
+  ID_branchControl.branchDest = 0x2323_2323
+  ---
+  ID_EX.rs    = 0
+  ID_EX.rt    = 0
+  ID_EX.rd    = 0
+  ID_EX.shamt = 0
+  ID_EX.imm16 = 0x0000_0000
+  ID_EX.imm32 = 0x0000_0000
+  ---
+  ID_EX.rsVal = 0x0000_0000
+  ID_EX.rtVal = 0x0000_0000
+  ---
+  ID_EX.ALUsrc      = 0
+  ID_EX.ALU.bNegate = 0
+  ID_EX.ALU.op      = 0
+  ---
+  ID_EX.memRead  = 0
+  ID_EX.memWrite = 0
+  ID_EX.memToReg = 0
+  ---
+  ID_EX.regDst   = 0
+  ID_EX.regWrite = 0
+
+  EX_MEM.rtVal = 0x0000_0000
+  ---
+  EX_MEM.memRead  = 0
+  EX_MEM.memWrite = 0
+  EX_MEM.memToReg = 0
+  ---
+  EX_MEM.destReg  = 0
+  EX_MEM.regWrite = 0
+  ---
+  EX_MEM.aluResult = 0x0000_0000
+
+  MEM_WB.memToReg  = 0
+  MEM_WB.aluResult = 0x0000_0000
+  MEM_WB.memResult = 0x0000_0000
+  ---
+  MEM_WB.destReg  = 0
+  MEM_WB.regWrite = 0
+
+  A total of 0 registers were changed.
+

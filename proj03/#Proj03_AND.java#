@@ -1,0 +1,12 @@
+
+
+public class Proj03_AND extends Proj03_BinaryBase{
+
+	public void execute(){
+
+		out = (a && b);
+
+	}//execute()
+
+
+}//Proj03 class
